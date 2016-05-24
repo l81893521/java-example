@@ -12,10 +12,7 @@ JDBC全称为Java Database Connectivity(java数据库连接)
 	* conn.createStatement()
 ##结构讲解
 
-*[online.babylove.www.jdbc.model](https://github.com/l81893521/java-example/tree/master/src/main/java/online/babylove/www/jdbc/model)模型层
-
-*`online.babylove.www.jdbc.util`工具包
-
-*`online.babylove.www.jdbc.dao`数据持久层
-
-*`online.babylove.www.jdbc.controller`控制层
+* [online.babylove.www.jdbc.model](https://github.com/l81893521/java-example/tree/master/src/main/java/online/babylove/www/jdbc/model)模型层
+* `online.babylove.www.jdbc.util`工具包
+* `online.babylove.www.jdbc.dao`数据持久层
+* `online.babylove.www.jdbc.controller`控制层
