@@ -11,7 +11,7 @@ DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/test","root","root")
 -创建Statement对象
 conn.createStatement()
 ##结构讲解
--'online.babylove.www.jdbc.model'模型层
--'online.babylove.www.jdbc.util'工具包
--'online.babylove.www.jdbc.dao'数据持久层
--'online.babylove.www.jdbc.controller'控制层
+*'online.babylove.www.jdbc.model'模型层
+*'online.babylove.www.jdbc.util'工具包
+*'online.babylove.www.jdbc.dao'数据持久层
+*'online.babylove.www.jdbc.controller'控制层
