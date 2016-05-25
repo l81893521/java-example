@@ -6,7 +6,7 @@ public class Person {
 	
 	private Integer id;
 	//名称
-	private String user_name;
+	private String userName;
 	//性别
 	private Integer sex;
 	//年龄
@@ -18,13 +18,13 @@ public class Person {
 	//手机
 	private String mobile;
 	//创建人
-	private String create_user;
+	private String createUser;
 	//修改人
-	private String update_user;
+	private String updateUser;
 	//创建时间
-	private Date create_date;
+	private Date createDate;
 	//修改时间
-	private Date update_date;
+	private Date updateDate;
 	//是否删除
 	private Integer isdel;
 
@@ -34,14 +34,6 @@ public class Person {
 
 	public void setId(Integer id) {
 		this.id = id;
-	}
-
-	public String getUser_name() {
-		return user_name;
-	}
-
-	public void setUser_name(String user_name) {
-		this.user_name = user_name;
 	}
 
 	public Integer getSex() {
@@ -84,43 +76,51 @@ public class Person {
 		this.mobile = mobile;
 	}
 
-	public String getCreate_user() {
-		return create_user;
-	}
-
-	public void setCreate_user(String create_user) {
-		this.create_user = create_user;
-	}
-
-	public String getUpdate_user() {
-		return update_user;
-	}
-
-	public void setUpdate_user(String update_user) {
-		this.update_user = update_user;
-	}
-
-	public Date getCreate_date() {
-		return create_date;
-	}
-
-	public void setCreate_date(Date create_date) {
-		this.create_date = create_date;
-	}
-
-	public Date getUpdate_date() {
-		return update_date;
-	}
-
-	public void setUpdate_date(Date update_date) {
-		this.update_date = update_date;
-	}
-
 	public Integer getIsdel() {
 		return isdel;
 	}
 
 	public void setIsdel(Integer isdel) {
 		this.isdel = isdel;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getCreateUser() {
+		return createUser;
+	}
+
+	public void setCreateUser(String createUser) {
+		this.createUser = createUser;
+	}
+
+	public String getUpdateUser() {
+		return updateUser;
+	}
+
+	public void setUpdateUser(String updateUser) {
+		this.updateUser = updateUser;
+	}
+
+	public Date getCreateDate() {
+		return createDate;
+	}
+
+	public void setCreateDate(Date createDate) {
+		this.createDate = createDate;
+	}
+
+	public Date getUpdateDate() {
+		return updateDate;
+	}
+
+	public void setUpdateDate(Date updateDate) {
+		this.updateDate = updateDate;
 	}
 }
