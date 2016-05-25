@@ -11,6 +11,11 @@ JDBC全称为Java Database Connectivity(java数据库连接)
 * [online.babylove.www.jdbc.dao.proc](https://github.com/l81893521/java-example/tree/master/src/main/java/online/babylove/www/jdbc/dao/proc)持久层存放调用存储过程代码
 * [online.babylove.www.jdbc.util](https://github.com/l81893521/java-example/tree/master/src/main/java/online/babylove/www/jdbc/util)工具包
 
+##资源文件
+
+* [建表sql](https://github.com/l81893521/java-example/tree/master/src/main/resources/jdbc/table)
+* [建存储过程sql](https://github.com/l81893521/java-example/tree/master/src/main/resources/jdbc/table)
+
 
 
 ##操作数据库基础
