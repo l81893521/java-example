@@ -5,9 +5,13 @@ JDBC全称为Java Database Connectivity(java数据库连接)
 ##结构讲解
 
 * [online.babylove.www.jdbc.model](https://github.com/l81893521/java-example/tree/master/src/main/java/online/babylove/www/jdbc/model)模型层
-* `online.babylove.www.jdbc.util`工具包
-* `online.babylove.www.jdbc.dao`数据持久层
-* `online.babylove.www.jdbc.controller`控制层
+* [online.babylove.www.jdbc.view](https://github.com/l81893521/java-example/tree/master/src/main/java/online/babylove/www/jdbc/view)视图层
+* [online.babylove.www.jdbc.controller](https://github.com/l81893521/java-example/tree/master/src/main/java/online/babylove/www/jdbc/controller)控制层
+* [online.babylove.www.jdbc.dao](https://github.com/l81893521/java-example/tree/master/src/main/java/online/babylove/www/jdbc/dao)数据持久层
+* [online.babylove.www.jdbc.dao.proc](https://github.com/l81893521/java-example/tree/master/src/main/java/online/babylove/www/jdbc/dao/proc)持久层存放调用存储过程代码
+* [online.babylove.www.jdbc.util](https://github.com/l81893521/java-example/tree/master/src/main/java/online/babylove/www/jdbc/util)工具包
+
+
 
 ##操作数据库基础
 * JDBC编程步骤
