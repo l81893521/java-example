@@ -27,6 +27,23 @@ JDBC全称为Java Database Connectivity(java数据库连接)
 	* DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/test","root","root")
 * 创建Statement对象
 	* conn.createStatement()
+
+##事务
+###简介
+* 事务(Transaction)是作为单个逻辑工作单元执行的一系列操作，这些操作都作为一个整体一起像系统提交，要么都执行，要么都不执行。
+###特点
+* 原子性(Atomicity)
+	* 事务是一个完整的操作。
+* 一致性(Consistency)
+	* 当事务完成时，数据必须处于一致状态。
+* 隔离性(Isolation)
+	* 对数据进行修改的所有并发事务是彼此隔离的。
+* 永久性(Durability)
+	* 事务完成后，它对数据库的修改被永久保存。
+###jdbc对事务的支持
+* 通过提交commit()或者回滚rollback()来管理事务的操作
+* 事务操作默认是自动提交
+* 可以通过调用setAutoCommit(false)来禁止自动提交
 	
 ##主要操作对象
 ###`java.sql.Connection`
@@ -43,3 +60,6 @@ JDBC全称为Java Database Connectivity(java数据库连接)
 ###`java.sql.ResultSet`
 * 数据库结果集的数据表，通过执行查询语句后而生成
 * 通过调用next方法来移动它的指针，如果返回false，则代表指针已经到达最后一行数据的后面。
+
+###`java.sql.CallableStatement`
+* 这是一个用来执行存储过程的接口
