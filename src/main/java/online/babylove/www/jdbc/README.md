@@ -40,6 +40,7 @@ JDBC全称为Java Database Connectivity(java数据库连接)
 	* 对数据进行修改的所有并发事务是彼此隔离的。
 * 永久性(Durability)
 	* 事务完成后，它对数据库的修改被永久保存。
+	
 ###jdbc对事务的支持
 * 通过提交commit()或者回滚rollback()来管理事务的操作
 * 事务操作默认是自动提交
