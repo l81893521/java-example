@@ -31,6 +31,7 @@ JDBC全称为Java Database Connectivity(java数据库连接)
 ##事务
 ###简介
 * 事务(Transaction)是作为单个逻辑工作单元执行的一系列操作，这些操作都作为一个整体一起像系统提交，要么都执行，要么都不执行。
+
 ###特点
 * 原子性(Atomicity)
 	* 事务是一个完整的操作。
