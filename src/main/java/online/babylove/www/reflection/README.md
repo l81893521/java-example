@@ -11,3 +11,4 @@
 	* int,double,float等，甚至void关键字 都存在类类型 [查看代码](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/reflection/demo2/ClassDemo2.java)
 * Class类的基本API操作
 	* [查看代码](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/reflection/demo3/ClassUtil.java)
+	* [运行入口](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/reflection/demo3/ClassDemo3.java)
