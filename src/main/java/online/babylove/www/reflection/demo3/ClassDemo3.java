@@ -3,10 +3,14 @@ package online.babylove.www.reflection.demo3;
 public class ClassDemo3 {
 	
 	public static void main(String[] args) {
-		String s1 = "Hello";
-		ClassUtil.printClassMessage(s1);
+		String s = "Hello";
+//		ClassUtil.printClassMethodMessage(s);
+//		ClassUtil.printClassFieldMessage(s);
+		ClassUtil.printClassConstructorMessage(s);
 		
-		Integer i1 = 1;
-		ClassUtil.printClassMessage(i1);
+//		Integer i = 1;
+//		ClassUtil.printClassMethodMessage(i);
+//		ClassUtil.printClassFieldMessage(i);
+//		ClassUtil.printClassConstructorMessage(i);
 	}
 }
