@@ -92,19 +92,33 @@ public class PersonController {
 //		person.setIsdel(0);
 		
 		PersonDao personDao = new PersonDao();
+//		
+//		List<Map<String, Object>> params = new ArrayList<Map<String,Object>>();
+//		Map<String, Object> param = new HashMap<String, Object>();
+//		param.put("name", "user_name");
+//		param.put("rela", "like");
+//		param.put("value", "'%小%'");
+//		params.add(param);
+//		param = new HashMap<String, Object>();
+//		param.put("name", "mobile");
+//		param.put("rela", "like");
+//		param.put("value", "'%1%'");
+//		params.add(param);
 		
 		List<Map<String, Object>> params = new ArrayList<Map<String,Object>>();
+		
 		Map<String, Object> param = new HashMap<String, Object>();
 		param.put("name", "user_name");
 		param.put("rela", "like");
 		param.put("value", "'%小%'");
 		params.add(param);
-		param = new HashMap<String, Object>();
-		param.put("name", "mobile");
-		param.put("rela", "like");
-		param.put("value", "'%1%'");
-		params.add(param);
 		
+		param = new HashMap<String, Object>();
+		param.put("name", "sex");
+		param.put("rela", "=");
+		param.put("value", "0");
+		params.add(param);
+//		
 		List<Person> persons = personDao.all(params);
 		for(Person p : persons){
 			System.out.println(ReflectionToStringBuilder.toString(p));
@@ -114,5 +128,7 @@ public class PersonController {
 //		personDao.del(11);
 //		Person person = personDao.get(10);
 //		System.out.println(ReflectionToStringBuilder.toString(person));
+		
+		
 	}
 }
