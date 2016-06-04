@@ -23,6 +23,6 @@
 	
 * 通过反射了解集合泛型的本质
 	* 通过Class, Method来认识泛型的本质
-	* int类型的值，加入到ArrayList<String>集合当中,是否可行?
+	* int类型的值，加入到`ArrayList<String>`集合当中,是否可行?
 	* [查看代码](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/reflection/demo5/MethodDemo2.java)
 	
