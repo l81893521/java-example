@@ -15,3 +15,14 @@
 	* 查看类的构造方法
 	* [查看代码](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/reflection/demo3/ClassUtil.java)
 	* [运行入口](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/reflection/demo3/ClassDemo3.java)
+
+* 方法的反射
+	* 如何获取某个方法，方法的名称和方法的参数列表才能唯一决定某个方法
+	* 方法的反射操作method.invoke(对象，参数列表)
+	* [查看代码](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/reflection/demo4/MethodDemo1.java)
+	
+* 通过反射了解集合泛型的本质
+	* 通过Class, Method来认识泛型的本质
+	* int类型的值，加入到ArrayList<String>集合当中,是否可行?
+	* [查看代码](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/reflection/demo5/MethodDemo2.java)
+	
