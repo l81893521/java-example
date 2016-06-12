@@ -5,10 +5,10 @@ import java.io.IOException;
 
 import online.babylove.www.io.demo4.IOUtil;
 
-public class FileOutDemo1 {
+public class FileOutputStreamDemo1 {
 	public static void main(String[] args) throws IOException{
 		//如果该文件不存在，则直接创建，如果存在，则删除后创建
-		FileOutputStream out = new FileOutputStream("out.dat");
+		FileOutputStream out = new FileOutputStream("demo/fileOutputStreamDemo.dat");
 		//如果该文件不存在，则直接创建，如果存在，则追加
 //		FileOutputStream out = new FileOutputStream("demo/out.dat",true);
 		//每次只能写一个字节
@@ -25,6 +25,6 @@ public class FileOutDemo1 {
 		
 		out.close();
 		
-		IOUtil.printHexByByteArray("out.dat");
+		IOUtil.printHexByByteArray("demo/fileOutputStreamDemo.dat");
 	}
 }

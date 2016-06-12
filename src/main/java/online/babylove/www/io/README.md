@@ -27,5 +27,12 @@
 
 #FileOutputStream(字节流)
 * FileOutputStream继承了OutputStream并实现了向文件写出byte数据的方法
-* [FileOutputStream demo](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo4/FileOutDemo1.java)
+* [FileOutputStream demo](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo4/FileOutputStreamDemo1.java)
 * [文件复制demo运行入口](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo4/IOUtilTest3.java)
+
+#DataInputStream/DataOutputStream
+* 这组类，是对"流"功能的扩展，可以更加方便的读取int,long,字符等类型数据
+* DataOutputStream会有一些更加方便的方法，如writeInt()/writeDouble()/writeUTF()等
+* DataInputStream同理
+* [DataOutputStream demo](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo4/DataOutputStreamDemo1.java)
+* [DataInputStream demo](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo4/DataInputStreamDemo1.java)
