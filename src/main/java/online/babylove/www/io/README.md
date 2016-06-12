@@ -20,9 +20,12 @@
 * 支持随机访问文件，可以访问文件的任意位置
 * [查看代码](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo3/RafDemo.java)
 
-#字节流
-* InputStream抽象了应用程序读取数据的方式
-* OutStream抽象了应用程序写出数据的方式
-* EOF(end of file) = End 读到-1就读到结尾
+#FileInputStream(字节流)
+* FileInputStream继承了InputStream并实现了在文件上按字节读取数据,
 * [读取指定文件内容，按照16进制输出到控制台,运行入口(单字节读取)](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo4/IOUtilTest1.java)
 * [读取指定文件内容，按照16进制输出到控制台,运行入口(批量字节读取)](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo4/IOUtilTest2.java)
+
+#FileOutputStream(字节流)
+* FileOutputStream继承了OutputStream并实现了向文件写出byte数据的方法
+* [FileOutputStream demo](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo4/FileOutDemo1.java)
+* [文件复制demo运行入口](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo4/IOUtilTest3.java)

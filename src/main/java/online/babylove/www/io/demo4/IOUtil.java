@@ -1,9 +1,9 @@
 package online.babylove.www.io.demo4;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * IO流是Java做输入输出的基础(分为输入流和输出流)
@@ -109,5 +109,33 @@ public class IOUtil {
 			}
 		}
 		in.close();
+	}
+	
+	/**
+	 * 文件复制操作
+	 * @param srcFile
+	 * @param destFile
+	 * @throws IOException
+	 */
+	public static void copyFile(File srcFile, File destFile) throws IOException{
+		if (!srcFile.exists()) {
+			throw new IllegalArgumentException("文件:"+srcFile+"不存在");
+		}
+		if(!srcFile.isFile()){
+			throw new IllegalArgumentException(srcFile + "不是文件");
+		}
+		FileInputStream in = new FileInputStream(srcFile);
+		FileOutputStream out = new FileOutputStream(destFile);
+		
+		byte[] buf = new byte[8 * 1024];
+		int b;
+		//把内容读到buf字节数组
+		while((b=in.read(buf,0,buf.length))!=-1){
+			//把字节数组写入到destFile
+			out.write(buf, 0, b);
+			out.flush();
+		}
+		in.close();
+		out.close();
 	}
 }
