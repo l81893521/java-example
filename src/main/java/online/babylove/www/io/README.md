@@ -36,3 +36,18 @@
 * DataInputStream同理
 * [DataOutputStream demo](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo4/DataOutputStreamDemo1.java)
 * [DataInputStream demo](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo4/DataInputStreamDemo1.java)
+
+#BufferedInputStream/BufferedOutputStream
+* 这两个"流"类为IO提供了带缓冲区的操作，一般打开文件进行写入或读取操作时，都会加上缓冲，这种流模式提高了IO的性能
+* 从应用程序中把输入放入文件，相当于将一缸水倒入到另一个缸中
+	* FileOutputStream--->write()方法相当于一滴一滴地把水"转移"过去
+	* DataOutputStream--->writeXxx()方法会方便一些，相当于一勺一勺把水"转义"过去(其实效率没变)
+	* BufferedOutputStream--->writeXxx()方法更方便，相当于一勺一勺先把水放入到桶中(缓冲区),再从桶倒入到另一个缸中(性能提高了)
+* [利用缓冲区文件复制demo运行入口](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo4/IOUtilTest4.java)
+
+#效率测试
+* [IOUtil.java](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo4/IOUtilTest4.java)内有3个复制文件方法，分别是copyFile(),copyFileByBuffer(),copyFileByByte()
+* copyFile()的实现方式是使用开辟内存，批量字节读写
+* copyFileByBuffer()的实现方式是使用缓冲区读写
+* copyFileByByte的实现方式是单字节读写
+* [测试入口](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo4/IOUtilTest5.java)
