@@ -56,16 +56,16 @@
 * 和字节流一样有read()和write()方法，区别是字符流每次读取的单位是字符(非字节，底层还是把byte流转化为char流或者char流转化为byte流)
 * [demo](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo5/InputStreamReaderAndOutputStreamWriterDemo1.java)
 
-##FileReader/FileWriter
+##FileReader/FileWriter(字符流)
 * 主要用来处理文件
 * 构造更加方便了(其实也是通过FileInputStream和InputStreamReader来构造)
 * [demo](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo5/FileReaderAndFileWriterDemo1.java)
 
-##BufferedReader/BufferedWriter/PrintWriter
+##BufferedReader/BufferedWriter/PrintWriter(字符流)
 * 可以一次读取/写入一行
 * [demo](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo5/InputStreamReaderAndOutputStreamWriterDemo1.java)
 
-##对象序列化/反序列化(ObjectOutputStream/ObjectInputStream)
+##对象序列化/反序列化(ObjectOutputStream/ObjectInputStream)(字符流)
 * 序列化--->将Object转换成byte序列
 * 反序列化--->将byte序列转换成Object
 * 对象必须实现Serializable接口，这个接口没有任何方法，只是一个标准
