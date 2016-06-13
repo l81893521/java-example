@@ -19,7 +19,7 @@ public class FileDemo {
 //		System.out.println(file.exists());
 		if(!file.exists()){
 			//如果多级目录
-			//file.mkdirs();
+//			file.mkdirs();
 			//创建文件(目录)
 			file.mkdir();
 		}else{
