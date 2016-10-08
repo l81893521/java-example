@@ -9,16 +9,16 @@ import java.io.Serializable;
 
 public class ObjectSerializableDemo2{
 	public static void main(String[] args) throws IOException, ClassNotFoundException{
-		String file = "demo/obj1.dat";
-		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
+//		String file = "demo/obj1.dat";
+//		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
 		
 		/*
 		 * 控制台输出的是构造递归调用父类构造函数所输出的，跟序列化没关系
 		 */
-		Foo2 foo2 = new Foo2();
-		oos.writeObject(foo2);
-		oos.flush();
-		oos.close();
+//		Foo2 foo2 = new Foo2();
+//		oos.writeObject(foo2);
+//		oos.flush();
+//		oos.close();
 		
 		/*
 		 * 反序列化，是否递归调用父类的构造函数?
@@ -26,11 +26,11 @@ public class ObjectSerializableDemo2{
 		 * 并不能证明
 		 * 请继续往下看Bar类
 		 */
-		ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file));
-		System.out.println("反序列化中....");
-		Foo2 foo22 = (Foo2)ois.readObject();
-		System.out.println(foo22);
-		ois.close();
+//		ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file));
+//		System.out.println("反序列化中....");
+//		Foo2 foo22 = (Foo2)ois.readObject();
+//		System.out.println(foo22);
+//		ois.close();
 		
 		/*
 		 * 第二个例子
@@ -58,7 +58,7 @@ public class ObjectSerializableDemo2{
 		Bar2 bar22 = (Bar2)ois2.readObject();
 		System.out.println(bar22);
 		ois2.close();
-		
+//		
 		/*
 		 * 我们得出一个结论
 		 * 对子类对象进行反序列化操作时

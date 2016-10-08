@@ -32,8 +32,8 @@ public class InputStreamReaderAndOutputStreamWriterDemo1 {
 		 * 返回的是读到的字符的个数c
 		 */
 		while((c=isr.read(buffer, 0, buffer.length))!=-1){
-			String s = new String(buffer, 0, c);
-			System.out.print(s);
+//			String s = new String(buffer, 0, c);
+//			System.out.print(s);
 			//批量写入，从0开始写，最多写c个
 			osw.write(buffer, 0, c);
 			//刷新缓冲区

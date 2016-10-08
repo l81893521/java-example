@@ -29,12 +29,12 @@ public class IOUtilTest5 {
 			 * 使用缓冲区拷贝
 			 * 耗时:11444毫秒
 			 */
-//			IOUtil.copyFileByBuffer(new File(file), new File("demo/QQMusic3.1.1Build02-2.dmg"));
+			IOUtil.copyFileByBuffer(new File(file), new File("demo/QQMusic3.1.1Build02-2.dmg"));
 			/*
 			 * 开辟内存，批量字节拷贝
 			 * 耗时:7毫秒
 			 */
-			IOUtil.copyFile(new File(file), new File("demo/QQMusic3.1.1Build02-3.dmg"));
+//			IOUtil.copyFile(new File(file), new File("demo/QQMusic3.1.1Build02-3.dmg"));
 			long end = System.currentTimeMillis();
 			System.out.println(end - start);
 		} catch (IOException e) {

@@ -33,6 +33,7 @@ public class FileUtils {
 		if(files != null && files.length > 0){
 			for (File file : files) {
 				if(file.isDirectory()){
+					System.out.println(file);
 					//递归
 					listDirectory(file);
 				}else{
@@ -40,6 +41,5 @@ public class FileUtils {
 				}
 			}
 		}
-		
 	}
 }

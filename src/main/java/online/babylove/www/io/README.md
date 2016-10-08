@@ -58,7 +58,7 @@
 
 ##FileReader/FileWriter(字符流)
 * 主要用来处理文件
-* 构造更加方便了(其实也是通过FileInputStream和InputStreamReader来构造)
+* 构造更加方便了(其实也是通过FileInputStream和FileOutputStream来构造)
 * [demo](https://github.com/l81893521/java-example/blob/master/src/main/java/online/babylove/www/io/demo5/FileReaderAndFileWriterDemo1.java)
 
 ##BufferedReader/BufferedWriter/PrintWriter(字符流)

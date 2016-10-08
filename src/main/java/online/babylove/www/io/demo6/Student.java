@@ -3,8 +3,9 @@ package online.babylove.www.io.demo6;
 import java.io.Serializable;
 
 public class Student implements Serializable{
-	private static final long serialVersionUID = -1554003239327620522L;
 	
+	private static final long serialVersionUID = -254016405508214405L;
+
 	public Student() {
 	}
 	

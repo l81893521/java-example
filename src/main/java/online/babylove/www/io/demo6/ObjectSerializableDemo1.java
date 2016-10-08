@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.List;
 
 public class ObjectSerializableDemo1{
 	public static void main(String[] args) throws IOException, ClassNotFoundException{
@@ -32,5 +33,6 @@ public class ObjectSerializableDemo1{
 		Student student2 = (Student)ois.readObject();
 		System.out.println(student2);
 		ois.close();
+		
 	}
 }

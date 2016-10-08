@@ -35,7 +35,7 @@ public class BufferedReaderAndBufferedWriterOrPrintWriterDemo1 {
 		while((line=br.readLine())!=null){
 			System.out.print(line);
 			//可以追加
-			//bw.append();
+//			bw.append();
 			bw.write(line);
 			//单独写出换行操作
 			bw.newLine();

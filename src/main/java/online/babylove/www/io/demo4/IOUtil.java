@@ -58,6 +58,7 @@ public class IOUtil {
 			if(i++%10==0){
 				System.out.println();
 			}
+			
 		}
 		in.close();
 	}
@@ -77,7 +78,6 @@ public class IOUtil {
 		 * 返回的是读到的字节的个数
 		 */
 //		int bytes = in.read(buf,0,buf.length);//一次性读完，说明字节数组足够大
-//		
 //		int j = 1;
 		/*
 		 * i<buf.length吗，不是,i<bytes,因为你只读到了bytes个
@@ -130,9 +130,10 @@ public class IOUtil {
 		FileInputStream in = new FileInputStream(srcFile);
 		FileOutputStream out = new FileOutputStream(destFile);
 		
-		byte[] buf = new byte[8 * 1024];
+		byte[] buf = new byte[1024];
 		int b;
 		//把内容读到buf字节数组
+		in.read(buf, 0, buf.length);
 		while((b=in.read(buf,0,buf.length))!=-1){
 			//把字节数组写入到destFile
 			out.write(buf, 0, b);
@@ -165,7 +166,6 @@ public class IOUtil {
 			//刷新缓冲区,否则它写入不到文件里面去
 			bos.flush();
 		}
-		
 		bis.close();
 		bos.close();
 		

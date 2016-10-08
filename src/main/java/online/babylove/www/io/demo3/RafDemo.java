@@ -27,18 +27,18 @@ public class RafDemo {
 		System.out.println(raf.getFilePointer());
 		
 		raf.write('B');
-		
+		System.out.println(raf.getFilePointer());
 		int i = 0x7fffffff;
 		//用write方法每次只能写一个字节，如果要把i写进去就得写4次
 		raf.write(i >>> 24);//高八位
 		raf.write(i >>> 16);//
 		raf.write(i >>> 8);//
-		raf.write(i);//
+		raf.write(i >>> 0);//
 		System.out.println(raf.getFilePointer());
 		
 		//也可以直接写int
 		raf.writeInt(i);
-		
+		System.out.println(raf.getFilePointer());
 		String s = "中";
 		byte utf8[] = s.getBytes("utf-8");
 		raf.write(utf8);
@@ -46,13 +46,13 @@ public class RafDemo {
 		
 		//读文件，必须把指针移到头部
 		raf.seek(0);
-//		raf.read()//只读一个字节
+//		raf.read();//只读一个字节
 		//一次性读取,把文件中的内容都读到字节数组中
-		byte buf[] = new byte[(int)raf.length()];
+		byte[] buf = new byte[(int)raf.length()];
 		raf.read(buf);
 		System.out.println(Arrays.toString(buf));
 		
-		String s1 = new String(buf,"");
+		String s1 = new String(buf,"utf-8");
 		System.out.println(s1);
 		
 		for (byte b : buf) {
